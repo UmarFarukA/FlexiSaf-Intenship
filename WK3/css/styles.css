@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Roboto; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 1.2rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 0.2rem solid #015f33; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem; }
+    header nav ul li {
+      list-style: none; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #015f33;
+        font-size: 1.2rem;
+        transition: 0.2ms ease; }
+        header nav ul li a:hover {
+          color: #347f5c; }
+  header .logo span {
+    color: #015f33;
+    font-weight: 800; }
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 75vh;
+  padding: 2.4rem 9.2rem; }
+  .hero__left {
+    grid-column: 1 / 2;
+    margin-top: 4.8rem;
+    justify-self: right; }
+    .hero__left h3 {
+      color: #015f33;
+      font-size: 2.4rem;
+      line-height: 1.5;
+      margin-bottom: 1.2rem; }
+    .hero__left p {
+      font-size: 1.2rem;
+      line-height: 1.5; }
+  .hero__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    margin-top: 1.4rem; }
+    .hero__buttons button {
+      text-align: center;
+      padding: 1.2rem 1.6rem;
+      color: #ffffff;
+      background-color: #015f33;
+      border-radius: 0.8rem;
+      border: none;
+      transition: background-color 0.5s ease-in-out; }
+      .hero__buttons button:hover {
+        cursor: pointer;
+        background-color: #347f5c; }
+  .hero__right {
+    grid-column: 2 / 3;
+    justify-self: center; }
+    .hero__right img {
+      width: 24.8rem;
+      height: 28.4rem;
+      border-radius: 0.4rem;
+      border: none; }
